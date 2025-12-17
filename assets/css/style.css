@@ -1,0 +1,501 @@
+:root{
+  --bg:#070708;
+  --card:#0d0d10;
+  --text:#f4f4f6;
+  --muted:#b7b7c2;
+  --gold:#d6b25e;
+  --line: rgba(214,178,94,0.22);
+  --radius: 18px;
+}
+
+*{box-sizing:border-box}
+
+html, body{
+  width:100%;
+  max-width:100%;
+}
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.8;
+  direction: rtl;
+  text-align: right;
+}
+
+a{ color:inherit; text-decoration:none; }
+
+img, svg, video{ max-width:100%; height:auto; }
+
+.container{
+  width:min(1200px, 92%);
+  margin:0 auto;
+}
+
+/* ===== HEADER ===== */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212,175,55,0.25);
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:14px 0;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+
+.brand-logo{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  display:block;
+}
+
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+.brand-name{
+  color: var(--gold);
+  font-weight: 800;
+  letter-spacing: .5px;
+  font-size: 18px;
+}
+
+.brand-slogan{
+  color: rgba(255,255,255,0.75);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Desktop nav */
+.nav{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.nav a{
+  color: rgba(255,255,255,0.85);
+  font-size:14px;
+  padding:8px 10px;
+  border-radius:10px;
+  transition:.2s;
+}
+
+.nav a:hover{
+  background: rgba(214,178,94,0.12);
+  color:#fff;
+}
+
+.nav a.active{
+  background: rgba(214,178,94,0.14);
+  border: 1px solid rgba(214,178,94,0.25);
+}
+
+.nav .cta{
+  background: var(--gold);
+  color:#0b0b0b;
+  font-weight:800;
+  padding:9px 14px;
+  border-radius:12px;
+}
+
+.nav .cta:hover{
+  background: rgba(214,178,94,0.92);
+}
+
+/* ===== Buttons ===== */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 18px;
+  border-radius:999px;
+  background:var(--gold);
+  color:#111;
+  font-weight:800;
+  border:1px solid transparent;
+}
+
+.btn--ghost{
+  background:transparent;
+  color:var(--text);
+  border:1px solid var(--line);
+}
+
+/* ===== HERO ===== */
+.hero{
+  padding:70px 0 34px;
+  border-bottom:1px solid var(--line);
+  background: radial-gradient(
+    700px 300px at 70% 10%,
+    rgba(214,178,94,0.14),
+    transparent
+  );
+}
+
+.hero h1{
+  margin:0 0 10px;
+  font-size:48px;
+  letter-spacing:1px;
+}
+
+.hero p{
+  color:var(--muted);
+  font-size:18px;
+  max-width:780px;
+}
+
+.hero__cta{
+  display:flex;
+  gap:12px;
+  margin-top:18px;
+  flex-wrap:wrap;
+}
+
+.hero__badges{
+  display:flex;
+  gap:10px;
+  margin-top:14px;
+  flex-wrap:wrap;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:8px 12px;
+  border-radius:999px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--line);
+  color: rgba(244,244,246,.92);
+  font-size: 13px;
+}
+
+/* ===== Sections / Layout ===== */
+.section{ padding:34px 0; }
+.section h2{ margin:0 0 10px; font-size:28px; }
+
+.section--dark{
+  background: rgba(255,255,255,.02);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:16px;
+  margin-top: 18px;
+}
+
+.grid--small{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.two-col{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:16px;
+  margin-top: 18px;
+}
+
+.card{
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 18px 16px;
+}
+
+.card--outline{
+  background: transparent;
+  border: 1px solid var(--line);
+}
+
+.note{
+  color: rgba(244,244,246,.85);
+  margin-top: 12px;
+}
+
+.center{ text-align:center; }
+
+/* ===== Programs ===== */
+.program-list{
+  display:grid;
+  gap:16px;
+  margin-top:18px;
+}
+
+.program-item{
+  display:block;
+  padding:18px 16px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  transition:.2s;
+}
+.program-item:hover{
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.18);
+}
+
+.program-item__title{ font-size:22px; font-weight:800; }
+.program-item__sub{ opacity:.85; margin-top:6px; font-size:18px; }
+.program-actions{ margin-top:20px; }
+
+/* ===== Footer ===== */
+.footer{
+  border-top:1px solid var(--line);
+  padding:22px 0;
+  color:var(--muted);
+}
+
+/* ======================================
+   Mobile Drawer (Hamburger) — FINAL
+   ====================================== */
+.nav-toggle{
+  display:none;
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  border:1px solid rgba(214,178,94,.25);
+  background: rgba(255,255,255,.03);
+  cursor:pointer;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  padding:10px;
+}
+.nav-toggle span{
+  display:block;
+  width:22px;
+  height:2px;
+  background: var(--gold);
+  border-radius:999px;
+}
+
+.nav-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  z-index: 999;
+  display:none;
+}
+
+/* nav-brand/nav-sep مخفيين بالديسكتوب */
+.nav .nav-brand,
+.nav .nav-sep{
+  display:none;
+}
+
+@media (max-width: 980px){
+
+  /* منع السحب يمين/شمال بالموبايل */
+  html, body{ overflow-x:hidden; }
+
+  .nav-toggle{ display:flex; }
+
+  /* Drawer nav */
+  #primary-nav.nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(340px, 86vw);
+    background: #0B0B0F;
+    border-left: 1px solid rgba(214,178,94,.18);
+    padding: 90px 14px 18px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:10px;
+
+    transform: translateX(105%);
+    transition: transform .22s ease;
+    z-index: 1000;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+
+  body.nav-open #primary-nav.nav{ transform: translateX(0); }
+  body.nav-open .nav-overlay{ display:block; }
+
+  /* Mobile Brand داخل القائمة */
+  #primary-nav.nav .nav-brand{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+    padding:14px 12px;
+    border-radius:16px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(214,178,94,.18);
+  }
+
+  #primary-nav.nav .nav-brand__logo{
+    width:38px;
+    height:38px;
+    border-radius:12px;
+    object-fit:contain;
+    background: rgba(0,0,0,.25);
+    border: 1px solid rgba(214,178,94,.14);
+    padding:6px;
+  }
+
+  #primary-nav.nav .nav-brand__name{
+    color:#fff;
+    font-weight:900;
+    font-size:15px;
+    line-height:1.2;
+  }
+
+  #primary-nav.nav .nav-brand__slogan{
+    color: rgba(244,244,246,.85);
+    font-size:12px;
+    line-height:1.3;
+    opacity:.9;
+  }
+
+  #primary-nav.nav .nav-sep{
+    display:block;
+    height:1px;
+    background: linear-gradient(90deg, transparent, rgba(214,178,94,.28), transparent);
+    margin: 4px 0 8px;
+  }
+
+  /* Links = مستطيلات فوق بعض 100% */
+  #primary-nav.nav > a{
+    width:100%;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:14px 14px;
+    border-radius:14px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(214,178,94,.12);
+  }
+
+  #primary-nav.nav > a.cta{
+    justify-content:center;
+    background: linear-gradient(180deg, rgba(214,178,94,1), rgba(188,150,35,1));
+    color:#0B0B0F;
+    border-color: rgba(214,178,94,.55);
+    font-weight:900;
+  }
+
+  /* Layout: grids عمود بالموبايل */
+  .grid{ grid-template-columns: 1fr; }
+  .grid--small{ grid-template-columns: 1fr; }
+  .two-col{ grid-template-columns: 1fr; }
+
+  /* Hero: خط و أحجام مناسبة للموبايل */
+  .hero h1{ font-size: 36px; }
+  .hero p{ font-size: 16px; }
+}
+/* ===============================
+   FINAL MOBILE MENU HARD FIX
+   =============================== */
+
+@media (max-width: 980px){
+
+  /* 1️⃣ تأكيد أن الـ drawer نفسه عمود 100% */
+  #primary-nav.nav{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    width: min(340px, 86vw) !important;
+    max-width: 86vw !important;
+    overflow-x: hidden !important;
+  }
+
+  /* 2️⃣ كل العناصر داخل المنيو تاخد العرض كامل */
+  #primary-nav.nav > *{
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 3️⃣ كل الروابط = مستطيلات فوق بعض بدون أي انزلاق */
+  #primary-nav.nav > a{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    width: 100% !important;
+    margin: 0 !important;
+
+    padding: 14px 14px !important;
+    border-radius: 14px !important;
+
+    background: rgba(255,255,255,.03) !important;
+    border: 1px solid rgba(214,178,94,.12) !important;
+
+    text-align: right !important;
+    white-space: normal !important;
+  }
+
+  /* 4️⃣ زر CTA لحاله متمركز */
+  #primary-nav.nav > a.cta{
+    justify-content: center !important;
+  }
+
+  /* 5️⃣ brand أعلى المنيو – وسط 100% */
+  #primary-nav.nav .nav-brand{
+    width: 100% !important;
+    margin: 0 0 6px 0 !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* 6️⃣ منع أي عنصر غبي يطلع يمين */
+  html, body{
+    overflow-x: hidden !important;
+  }
+}
+@media (max-width: 980px){
+  #primary-nav.nav{
+    flex-wrap: nowrap !important;   /* أهم سطر: يمنع الأعمدة الجانبية */
+    width: min(340px, 86vw) !important;
+    overflow-x: hidden !important;
+  }
+}
+@media (max-width: 980px){
+  #primary-nav.nav > a.cta{
+    background: #D4AF37 !important;
+    color: #0B0B0F !important;
+    border-color: rgba(212,175,55,.55) !important;
+  }
+
+  #primary-nav.nav > a.cta:hover{
+    background: rgba(212,175,55,.92) !important;
+  }
+}
+.nav a.active{
+  background: rgba(214,178,94,0.14);
+  border: 1px solid rgba(214,178,94,0.28);
+  color: #fff;
+}
