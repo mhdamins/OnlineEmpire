@@ -25,7 +25,7 @@
       </button>
 
       <nav id="primary-nav" class="nav" aria-label="Primary">
-        <!-- Mobile brand (يظهر فقط بالموبايل عبر CSS) -->
+        <!-- Mobile brand -->
         <a class="nav-brand" href="index.html" aria-label="Online Empire - Home">
           <img class="nav-brand__logo" src="assets/img/logo-online-empire.png" alt="Online Empire Logo">
           <div class="nav-brand__text">
@@ -58,140 +58,256 @@
     <section class="hero">
       <div class="container">
         <h1>ابدأ التغيير الآن</h1>
+
         <p class="lead">
-          وصلت لهون؟ ممتاز. هاد يعني إنك جاهز تنتقل من “متفرّج” إلى “لاعب”.
+          إذا وصلت لهون… إنت مو عم “تتفرّج”. إنت عم تدوّر على قرار يغيّر حياتك.
         </p>
+
         <p>
-          Online Empire مش معلومات… Online Empire نظام تدريبي ينقلك من الصفر إلى تنفيذ حقيقي.
-          اختر خطتك الآن — وخلي قرارك يكون بداية جديدة.
+          Online Empire مش منصة معلومات.
+          هي نظام تدريب عملي ينقلك من ضياع وتجارب… لخطوات واضحة ونتائج حقيقية.
+          <br />
+          اختَر خطتك الآن، وخلي اليوم يكون بداية مختلفة — بجد.
         </p>
 
         <div class="hero__cta">
-          <a class="btn" href="#pricing">اختَر الباكج الأنسب</a>
-          <a class="btn btn--ghost" href="programs.html">استكشف البرامج</a>
+          <a class="btn" href="#plans">اختَر خطتك الآن</a>
+          <a class="btn btn--ghost" href="programs.html">شوف البرامج أولاً</a>
         </div>
 
         <div class="hero__badges">
+          <span class="badge">واضح</span>
+          <span class="badge">عملي</span>
+          <span class="badge">مباشر</span>
           <span class="badge">نتائج</span>
-          <span class="badge">نظام واضح</span>
-          <span class="badge">تطبيق عملي</span>
-          <span class="badge">AI Tools</span>
         </div>
       </div>
     </section>
 
-    <!-- TRUST / WHY NOW -->
+    <!-- TRUST BLOCK -->
     <section class="section">
       <div class="container">
-        <div class="card">
-          <h2>ليش هالصفحة أهم قرار بالموقع؟</h2>
+
+        <div class="card card--wide">
+          <h2 style="margin-top:0">قبل ما تشتري… اسمع هاي الجملة</h2>
           <p>
-            لأن هون بتفصل بين شخص “قرأ وراح”…
-            وشخص قرر يدخل التجربة بجدّية ويصير جزء من المنصة كشريك نجاح.
+            أغلب الناس ما بتفشل لأنها “ما بتفهم”… بتفشل لأنها بتدخل غلط.
+            بتبدأ بإعلانات وأدوات قبل ما تبني الأساس، وبتحرق وقت ومصاري… وبالآخر بتحس التسويق ما بزبط.
           </p>
           <p class="note">
-            إذا بدك نتائج حقيقية، القرار لازم يكون واضح: إمّا تبدأ صح… أو تضل تجرّب بنفس الدائرة.
+            هون الفكرة مختلفة: أنت رح تدخل بنظام مرتب، مبني خطوة بخطوة، حتى ما تضيّع طريقك بنص الطريق.
           </p>
         </div>
+
+        <div class="grid grid--small" style="margin-top:16px">
+          <div class="card"><strong>✓ خطة واضحة بدل التجارب</strong></div>
+          <div class="card"><strong>✓ تطبيق عملي بدل كلام</strong></div>
+          <div class="card"><strong>✓ فهم السوق بدل التقليد</strong></div>
+          <div class="card"><strong>✓ انتقال حقيقي بدل تحفيز</strong></div>
+        </div>
+
       </div>
     </section>
 
-    <!-- PRICING -->
-    <section id="pricing" class="section section--dark">
+    <!-- PLANS -->
+    <section id="plans" class="section section--dark">
       <div class="container">
-        <h2>الأسعار والباقات</h2>
+        <h2>اختر خطتك</h2>
+        <p class="note" style="margin-top:6px">
+          إذا بدك “أسرع نتيجة” وأقوى انتقال… خذ الباكج. لأنه مصمم كمسار كامل، مو كفيديوهات متفرقة.
+        </p>
 
         <div class="program-list">
 
-          <!-- BEST VALUE -->
-          <div class="program-item" style="border-color: rgba(212,175,55,.45); box-shadow: 0 12px 30px rgba(212,175,55,.10);">
-            <div class="program-item__title">🔥 الباكج الأقوى: Level 1 + 2 + 3</div>
-            <div class="program-item__sub">أفضل قيمة — أسرع طريق للنتائج</div>
+          <!-- BUNDLE (BEST) -->
+          <div class="program-item" style="border-color: rgba(212,175,55,.50); box-shadow: 0 16px 40px rgba(212,175,55,.12);">
+            <div class="program-item__title">🔥 الباكج الذهبي (Level 1 + 2 + 3)</div>
+            <div class="program-item__sub">المسار الكامل — من الصفر إلى الاحتراف</div>
 
             <div class="card" style="margin-top:12px">
               <p style="margin:0">
-                <strong style="font-size:28px; color: var(--gold);">300$</strong>
-                <span style="opacity:.85;"> بدل 450$</span>
+                <span style="opacity:.75; text-decoration: line-through;">450$</span>
+                <span style="margin:0 10px; opacity:.5;">→</span>
+                <strong style="font-size:30px; color: var(--gold);">300$</strong>
               </p>
-              <p class="note" style="margin:10px 0 0">
-                ✅ توفير <strong>150$</strong> — لأنك اخترت تدخل صح من البداية.
+              <p class="note" style="margin-top:10px">
+                ✅ أفضل قرار إذا بدك تنتقل “نقلة كاملة” بدل ما تظل متقطع وتعيد من الصفر كل مرة.
               </p>
             </div>
 
             <div class="card" style="margin-top:12px">
               <ul style="margin:0">
-                <li><strong>Level 1</strong>: بناء العقلية + الهوية + المحتوى</li>
-                <li><strong>Level 2</strong>: إعلان مدفوع حقيقي + أرقام + قرارات</li>
-                <li><strong>Level 3</strong>: استراتيجية + خطة + Scaling + AI احترافي</li>
+                <li><strong>Level 1</strong>: عقلية التسويق + الهوية + المحتوى</li>
+                <li><strong>Level 2</strong>: إعلانات مدفوعة + أرقام + قرارات</li>
+                <li><strong>Level 3</strong>: استراتيجية + توسّع + أنظمة + AI</li>
               </ul>
             </div>
 
-            <p class="note" style="margin:12px 0 0">
-              إذا بدك توصّل لمرحلة “مسوّق غير قابل للاستبدال”… هاد هو خيارك.
-            </p>
+            <div class="card" style="margin-top:12px">
+              <p style="margin:0">
+                هذا الباكج معمول للي بدّه يوقف “يلف بدوائر”.
+                <br />
+                تدخل، تمشي على مسار واضح… وتطلع بنتيجة.
+              </p>
+            </div>
 
             <div style="margin-top:14px">
-              <!-- ✅ التبديل المهم -->
-              <a class="btn" href="checkout.html?plan=bundle">اشترِ باكج 3 مستويات الآن</a>
-              <a class="btn btn--ghost" href="programs.html">شوف تفاصيل المستويات</a>
+              <a class="btn" href="checkout.html?plan=bundle">اشترِ الباكج الآن</a>
+              <a class="btn btn--ghost" href="programs.html">تفاصيل المستويات</a>
             </div>
+
+            <p class="note" style="margin-top:12px">
+              ⚠️ إذا أنت جاد… لا تأجل. التأجيل هو أكثر سبب يقتل النتائج قبل ما تبدأ.
+            </p>
           </div>
 
-          <!-- SINGLE LEVEL -->
+          <!-- LEVEL 1 -->
           <div class="program-item">
             <div class="program-item__title">🧱 Level 1 – Foundations</div>
-            <div class="program-item__sub">الأساس اللي بيغيّر طريقة تفكيرك</div>
+            <div class="program-item__sub">الأساس اللي بيمنعك تضيع من البداية</div>
 
             <div class="card" style="margin-top:12px">
               <p style="margin:0">
-                <strong style="font-size:26px; color: var(--gold);">150$</strong>
-                <span style="opacity:.85;"> للمستوى</span>
+                <strong style="font-size:28px; color: var(--gold);">150$</strong>
+                <span style="opacity:.8;"> للمستوى</span>
               </p>
             </div>
 
             <div class="card" style="margin-top:12px">
               <ul style="margin:0">
-                <li>عقلية تسويقية صحيحة</li>
-                <li>هوية رقمية احترافية</li>
-                <li>Copywriting (Hook → Value → CTA)</li>
-                <li>أدوات إدارة الصفحات + قراءة التفاعل</li>
+                <li>تبني عقلية تسويقية صحيحة</li>
+                <li>هوية رقمية احترافية (صفحات + Bio + شكل)</li>
+                <li>كتابة محتوى يوقف الناس ويحرّكهم</li>
+                <li>قراءة التفاعل وفهم “ليش الناس تشتري”</li>
               </ul>
             </div>
 
             <div style="margin-top:14px">
-              <!-- ✅ التبديل المهم -->
               <a class="btn" href="checkout.html?plan=level1">اشترِ Level 1 الآن</a>
-              <a class="btn btn--ghost" href="level1.html">اقرأ تفاصيل Level 1</a>
+              <a class="btn btn--ghost" href="level1.html">شوف التفاصيل</a>
             </div>
           </div>
 
+          <!-- LEVEL 2 -->
           <div class="program-item">
             <div class="program-item__title">📣 Level 2 – Applied Advertising</div>
-            <div class="program-item__sub">من الفهم… إلى التنفيذ الحقيقي</div>
+            <div class="program-item__sub">إعلانات “بفهم”… مو إعلانات “بحرق ميزانية”</div>
 
             <div class="card" style="margin-top:12px">
               <p style="margin:0">
-                <strong style="font-size:26px; color: var(--gold);">150$</strong>
-                <span style="opacity:.85;"> للمستوى</span>
+                <strong style="font-size:28px; color: var(--gold);">150$</strong>
+                <span style="opacity:.8;"> للمستوى</span>
               </p>
             </div>
 
             <div class="card" style="margin-top:12px">
               <ul style="margin:0">
-                <li>بنية إعلانية صحيحة (Campaign/Ad Set/Ad)</li>
-                <li>كتابة إعلان يوقف الناس عنده</li>
-                <li>قراءة أرقام (CPM/CPC/CTR) بدون تعقيد</li>
-                <li>AI للإعلانات: أسرع + أذكى</li>
+                <li>بناء Business Manager و Ads Manager خطوة بخطوة</li>
+                <li>صياغة إعلان يخاطب عقل العميل</li>
+                <li>فهم الأرقام بدون خوف (CPC / CTR / CPM)</li>
+                <li>استخدام AI لتسريع ورفع جودة الإعلان</li>
               </ul>
             </div>
 
             <div style="margin-top:14px">
-              <!-- ✅ التبديل المهم -->
               <a class="btn" href="checkout.html?plan=level2">اشترِ Level 2 الآن</a>
-              <a class="btn btn--ghost" href="level2.html">اقرأ تفاصيل Level 2</a>
+              <a class="btn btn--ghost" href="level2.html">شوف التفاصيل</a>
             </div>
           </div>
 
+          <!-- LEVEL 3 -->
           <div class="program-item">
             <div class="program-item__title">📈 Level 3 – Strategic Marketing</div>
-            <div class="program-item__sub">من منفّذ… إلى عقل استراتيجي<
+            <div class="program-item__sub">هون بتصير “مرجع”… مو منفّذ</div>
+
+            <div class="card" style="margin-top:12px">
+              <p style="margin:0">
+                <strong style="font-size:28px; color: var(--gold);">150$</strong>
+                <span style="opacity:.8;"> للمستوى</span>
+              </p>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <ul style="margin:0">
+                <li>خطة تسويق شهرية/فصلية بأهداف واضحة</li>
+                <li>تحليل سوق ومنافسين بشكل احترافي</li>
+                <li>Retargeting + Funnel + Scaling</li>
+                <li>AI كذراع استراتيجي مش لعبة</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:14px">
+              <a class="btn" href="checkout.html?plan=level3">اشترِ Level 3 الآن</a>
+              <a class="btn btn--ghost" href="level3.html">شوف التفاصيل</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Decision helper -->
+        <div class="card" style="margin-top:16px">
+          <h3 style="margin-top:0">إذا محتار… اقرأ هاي بسرعة</h3>
+          <ul style="margin:0">
+            <li><strong>بدك مسار كامل ونتيجة أسرع؟</strong> → خذ الباكج.</li>
+            <li><strong>بدك تبدأ صح من الأساس؟</strong> → Level 1.</li>
+            <li><strong>بدك تفهم الإعلانات وتوقف الحرق؟</strong> → Level 2.</li>
+            <li><strong>بدك تصير استراتيجي وتقود السوق؟</strong> → Level 3.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIP -->
+    <section class="section">
+      <div class="container">
+        <div class="card card--wide">
+          <h2 style="margin-top:0">👑 Level 4 – VIP Coaching</h2>
+          <p>
+            الـ VIP مو مستوى “جاهز للبيع”.
+            لأنه خطة مخصصة بالكامل حسب مشروعك، هدفك، وواقعك.
+          </p>
+          <p class="note">
+            السعر يتم تحديده بعد <strong>استشارة مجانية</strong> قصيرة، لنفهم وضعك ونحدد الخطة الأنسب إلك.
+          </p>
+
+          <div style="margin-top:14px">
+            <a class="btn" href="contact.html">احجز استشارة مجانية</a>
+            <a class="btn btn--ghost" href="level4.html">تفاصيل VIP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL PUSH -->
+    <section class="section section--dark">
+      <div class="container center">
+        <h2>لا تتركها “لاحقًا”</h2>
+        <p>
+          لاحقًا = نفس الدائرة.
+          <br />
+          إذا بدك تغيير حقيقي… القرار لازم يكون اليوم.
+        </p>
+
+        <div style="margin-top:14px">
+          <a class="btn" href="#plans">اشترِ الآن</a>
+          <a class="btn btn--ghost" href="contact.html">اسأل قبل الشراء</a>
+        </div>
+
+        <p class="note" style="margin-top:14px">
+          Online Empire موجودة للي بده يبني نفسه… مو للي بده “يتسلى بالمعلومات”.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Online Empire</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=1"></script>
+</body>
+</html>
